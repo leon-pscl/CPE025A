@@ -45,7 +45,7 @@ print("Training finished!")
 print(f"Training time: {end_time_train - start_time_train:.2f} seconds")
 
 # Save model and scaler
-joblib.dump(xgb, "xgbb_water_model.pkl")
+joblib.dump(xgb, "xgb_water_model.pkl")
 joblib.dump(scaler, "xgb_colorimetry_scaler.pkl")
 joblib.dump(X.columns.tolist(), "xgb_feature_names.pkl")
 print("Model, scaler, and feature names saved.")
